@@ -1,9 +1,8 @@
-const withPrefresh = require('@prefresh/next');
-const preact = require('preact');
-const withPreact = require('next-plugin-preact');
+const withPreact = require('next-plugin-preact')
 
-module.exports = withPreact({
-  experimental: {
-    modern: true,
-  },
-});
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  /* regular next.js config options here */
+}
+
+module.exports = withPreact(nextConfig)
